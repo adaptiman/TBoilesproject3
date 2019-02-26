@@ -1,3 +1,9 @@
+#This is a hail mary. I had a very hard time parsing the file. I sat down with Luke and he helped with regex but I was not able to complete it at home. 
+#I was able to muster this up and found the total request but the rest of my code is UGLY.
+# I have none to little coding experience and I am sorry. 
+
+
+
 import requests
 url = "https://s3.amazonaws.com/tcmg476/http_access_log"
 r = requests.get(url, stream = True)
