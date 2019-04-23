@@ -1,0 +1,15 @@
+125/150
+
+You were using the "requests" python package, which is not part of the standard library for python3. If you use something outside of the standard library, you'll need a requirements.txt file that lists your dependencies. I've added that. I've also switched to urllib, which is part of the standard library. I've kept the requirements.txt for clarity. "requests" still works though, urllib is just a bit simpler. 
+
+Also added .gitignore to ignore the input file. It's very big and you don't want to commit it to Github, especially since your code downloads it anyway. 
+
+You're downloading the file by "chunks", there is a simpler way to do this. I've edited the code slightly, but your code did execute.
+
+Parsing was successful, all the counts seem to be correct. 
+
+Please use space more liberally. the python style guide (https://www.python.org/dev/peps/pep-0008/) is a great resource. More spacing would make your code a bit easier to read. A good example is spaces around the equals (=). There's a package called "autopep8" that will format your code for you, I've done that so you can see the difference. 
+
+Output is really messy and busy, hard to read. I would add sections in English and drop the values in. Instead of printing the whole variable, say "total requests: 220000" or something similar. 
+
+Not bad for your first program.
